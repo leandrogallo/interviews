@@ -102,7 +102,17 @@ afuera y por qué.
 6. **Revisión de código.** En el código que ya existe hay **al menos dos bugs** que
    no están en esta lista. Encontralos y arreglalos (o, si no te da el tiempo,
    explicalos en `NOTAS.md`).
-7. **`NOTAS.md`.** En la raíz, corto:
+7. **Un gráfico de cómo funciona.** En `DIAGRAMA.md`, en la raíz, uno o dos
+   diagramas que le expliquen el sistema a alguien que entra al equipo:
+   - las piezas (web, API, base, buró, outbox) y cómo se hablan;
+   - qué pasa, paso a paso, desde que el cliente aprieta «Confirmar» hasta que
+     tiene su oferta, **con tus cambios ya hechos** (dónde se valida el tope, dónde
+     se usa la caché del buró, qué evita la oferta duplicada).
+
+   Recomendamos [Mermaid](https://mermaid.js.org), que GitHub muestra directo en
+   el Markdown, pero sirve cualquier herramienta si subís la imagen. No miramos lo
+   lindo: miramos que sea correcto y que se entienda.
+8. **`NOTAS.md`.** En la raíz, corto:
    - qué hiciste y qué dejaste afuera, y por qué;
    - las decisiones que tomaste y qué alternativas descartaste;
    - qué haría falta para llevar esto a producción;
@@ -114,7 +124,7 @@ afuera y por qué.
 - Cómo manejás plata, fechas y concurrencia.
 - Datos personales: qué guardás, qué logueás, qué mandás afuera.
 - Código claro, que se entienda sin vos al lado.
-- Tu criterio para priorizar y explicar.
+- Tu criterio para priorizar y explicar, en `NOTAS.md` y en el diagrama.
 
 No miramos: diseño visual, cantidad de líneas ni que uses tal o cual librería.
 
